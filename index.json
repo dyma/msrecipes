@@ -1,0 +1,14 @@
+{
+  "recipes": {
+    "dhms/mscache": [
+      "1.0"
+    ]
+  },
+  "branch": "master",
+  "is_contrib": true,
+  "_links": {
+    "repository": "github.com/dyma/msrecipes",
+    "origin_template": "{package}:{version}@github.com/dyma/msrecipes:master",
+    "recipe_template": "https://api.github.com/repos/dyma/msrecipes/contents/{package_dotted}.{version}.json"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "manifests": {
+    "dhms/mscache": {
+      "manifest": {
+        "bundles": {
+          "DhMs\\CacheBundle\\DhMsCacheBundle": ["all"]
+        },
+        "copy-from-recipe": {
+          "config/": "%CONFIG_DIR%/"
+        }
+      },
+      "files": {
+        "config/packages/dh_ms_cache.yaml": {
+          "contents": [
+            "dh_ms_cache:",
+            "    mscache_tag_aware_service: 'redis'",
+            "    memcached_host: 'memcached'",
+            "    memcached_port: '11211'",
+            "    redis_host: 'redis'",
+            "    redis_port: '6379'",
+            "    redis_dbindex: '0'",
+            ""
+          ],
+          "executable": false
+        }
+      },
+      "ref": "632800f58de3e579191fb05375a38910dc47e093"
+    }
+  }
+}
